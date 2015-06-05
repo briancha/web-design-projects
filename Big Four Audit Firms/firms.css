@@ -1,0 +1,30 @@
+﻿#nav {
+	float: left;
+}
+
+#nav ul li {
+	list-style-type: none;
+	font-size: 27px;
+}
+
+#nav ul li a {
+	text-decoration: none;
+	color: #448fb0;
+}
+
+#nav ul li a:hover {
+	color: black;
+}
+
+.content {
+	padding-bottom: 10px;
+	border-bottom: 1px solid black;
+	width: 800px;
+	float: right;
+}
+
+.footer {
+	padding: 10px;
+	clear: right;
+	text-align: right;
+}

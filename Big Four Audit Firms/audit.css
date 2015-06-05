@@ -1,0 +1,19 @@
+﻿body {
+	font-family: cantarell;
+	margin: auto;
+	width: 1000px;
+}
+
+h1 {
+	font-family: m-1c;
+	font-size: 27px;
+}
+
+#main-image {
+	-webkit-transition: all 1s ease-in;
+	-o-transition: all 1s ease-in;
+	transition: all 1s ease-in;
+}
+#main-image:hover {
+	padding: 50px;
+}

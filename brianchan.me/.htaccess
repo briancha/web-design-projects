@@ -1,0 +1,8 @@
+RewriteEngine On
+# Check www is not being used (to avoid redirect loop)
+RewriteCond %{HTTP_HOST} !^www\.
+# Redirect
+RewriteRule ^(.*)$ https://www.brianchan.me/$1 [R=301,L]
+
+ErrorDocument 404 https://www.brianchan.me/404.shtml
+

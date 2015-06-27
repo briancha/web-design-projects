@@ -1,0 +1,130 @@
+﻿/*** courses.css ***/
+
+body {
+	font-family: Calibri;
+	margin: 0 auto;
+	width: 80%;
+}
+
+h1 {
+	font-family: 'Calibri Light';
+	font-size: 1.7em;
+	color: #16739d;
+}
+
+h3 {
+	font-family: 'Calibri Light';
+}
+
+#pageName {
+	text-align: right;
+	}
+
+#banner {
+	background: url(header.jpg) no-repeat;
+	background-size: cover;
+	height: 100px;
+	font-size: 2em;
+}
+
+#navClass {
+	border-bottom: 1px solid black;
+}
+
+#navClass ul li {
+	padding-right: 1em;
+	list-style-type: none;
+	display: inline;
+	font-size: 1.2em;
+
+}
+
+#navClass ul li a {
+	text-decoration: none;
+	color: #16739d;	
+}
+
+#navClass ul li a:hover {
+	color: black;
+	border-bottom: 1px solid black;
+}
+	
+
+#navCourse {
+	margin-top: 2em;
+	float: left;
+	width: 25%;
+}
+
+#navCourse ul li {
+	clear: left;
+	list-style-type: none;
+	font-size: 1.7em;
+}
+
+#navCourse ul li a {
+	text-decoration: none;
+	color: #8f8f8f;
+}
+
+#navCourse ul li a:hover {
+	color: black;
+	border-bottom: ;
+}
+
+#navCourse #current a {
+	color: black;
+	border-bottom: 2px solid black;
+}
+
+.contentBlock {
+	padding-bottom: 1em;
+	border-bottom: 1px solid black;
+	width: 75%;
+	float: right;
+}
+
+#footer {
+	margin: 1em auto;
+	clear: right;
+	float: right;
+	text-align: right;
+	}
+	
+#footer a {
+	text-decoration: none;
+	color: #5f5f5f;
+}
+
+#footer a:hover {
+	color: black;
+	border-bottom: 1px solid black;
+}
+
+td {
+	vertical-align: top;
+	padding: 5px;
+	padding-right: 30px;
+}
+
+th {
+	text-align: left;
+}
+
+#tableCourseFiles a {
+	text-decoration: none;
+	color: #16739d;
+}
+
+#tableCourseFiles a:hover {
+	border-bottom: 1px solid #16739d;
+}
+
+.textWrap {
+	float: left;
+	padding-bottom: 1.3em;
+}
+
+#courseText h1 {
+	clear: left;
+}

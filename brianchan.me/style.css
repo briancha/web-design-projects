@@ -1,0 +1,44 @@
+footer {
+	border-top: 1px solid #e5e5e5;
+	padding: 10px;
+	text-align: right;
+	margin-top: 10px;
+}
+
+footer a>img {
+	opacity: 0.3;
+	height: 30px;
+}
+
+footer a>img:hover {
+	opacity: 1;
+}
+
+iframe {
+	padding-bottom: 10px;
+}
+
+.logo img {
+	display: inline;
+}
+
+.row {
+	min-height: 360px;
+}
+
+.row img {
+	width: 100%;
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+	.row img {
+		width: 400px;
+	}
+}
+
+/* shrinks h1 for smartphones so it stays within the viewport */
+@media(max-width: 480px) {
+  h1 {
+    font-size: 1.7em;
+  }
+}

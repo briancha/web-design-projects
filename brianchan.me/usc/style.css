@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* CSS Document */
+header {
+	height: 75px;
+	margin: 20px 0;
+}
+h1 {
+	font-weight: normal;
+}
+body {
+	background: #900;
+	margin: auto;
+	color: white;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;	
+}
+
+nav li {
+	list-style-image: url(images/arrow.png);
+	float: left;
+	margin-right: 20px;
+}
+nav li a {
+	text-decoration: none;
+}
+nav li a:hover {
+	text-decoration: underline;
+}
+section {
+	
+}
+footer {
+	/* position: absolute; */
+	padding: 15px 0; 
+}
+a {
+	color: inherit;
+}
+.floatleft {
+	float: left;
+}
+.floatright {
+	float: right;
+}
+.clearer {
+	clear: both;
+}
+#main-image {
+	padding-right: 10px;
+}
+table {
+	border-color: inherit;
+}
+@media only screen and (max-width:480px){
+	body {
+		width: 90%;
+	}
+	img {
+		max-width: 100%;
+	}
+	footer img {
+		width: 100px;
+	}
+}
+
+@media only screen and (min-width:481px) {
+	body {
+		width: 85%;
+	}
+}
+
+
+@media screen and (min-width:1000px){
+	body {
+		width: 75%;
+	}
+}

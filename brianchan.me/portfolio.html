@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head lang="en">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio: Android, Java Programming Challenges, Web Design | Brian Chan</title>
+</head>
+
+<body>
+
+	<!-- refers to classes navbar, navbar-default -->
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<!-- this button is for mobile -->
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand brand logo" href="index.html">
+					<img src="logo.png" height="20" alt="Logo"/>
+					Brian Chan
+				</a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">Home</a></li>
+					<li class="active"><a href="portfolio.html">Portfolio</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	
+
+    <div class="container">
+
+		<div class="page-header">
+			<h1>Portfolio</h1>
+			<ol class="breadcrumb">
+			  <li><a href="index.html">Home</a></li>
+			  <li class="active">Portfolio</li>
+			</ol>
+		</div>
+		
+		<div class="row">		
+            <div class="col-sm-6 col-md-4">
+                <a href="android-apps.html"><h2>Android apps</h2></a>
+                <p>Some of the apps I've made, including this <a href="tip-calculator.html">Tip Calculator</a>.</p>
+				
+				<p>
+					<a href="android-apps.html">
+						<img src="https://raw.githubusercontent.com/briancha/Android-apps/master/Tip%20Calculator/screenshot.png" alt="Tip Calculator screenshot" />
+					</a>
+				</p>
+            </div>
+			
+            <div class="col-sm-6 col-md-4">
+                <a href="programming-challenges.html"><h2>Programming Challenges</h2></a>
+				<p>Programming challenges I've worked on in Java, such as converting a decimal number (base 10) into an octal number (base 8).</p>
+				<p>
+					<a href="programming-challenges.html">
+						<img src="https://raw.githubusercontent.com/briancha/programming-challenges/master/Convert%20Decimal%20to%20Octal/screenshot.png" alt="Convert Decimal to Octal screenshot" />
+					</a>
+				</p>
+            </div>
+			
+            <div class="col-sm-6 col-md-4">
+                <a href="web-design.html"><h2>Web Design</h2></a>
+				<p>Web Design projects, such as this <a href="usc" target="_new">simple USC site redesign</a>.</p>
+				<p>
+					<a href="web-design.html">
+						<img src="https://raw.githubusercontent.com/briancha/web-design-projects/master/USC/screenshot.png" alt="USC site screenshot" />
+					</a>
+				</p>
+                
+            </div>
+			
+			<div class="col-sm-6 col-md-4">
+                <a href="java-assignments.html"><h2>Java Assignments</h2></a>
+				<p>Assignments for programming classes, such as a rock, paper, scissors game against a computer.</p>
+				
+				<p>
+					<a href="java-assignments.html">
+						<img src="https://raw.githubusercontent.com/briancha/Java-2-assignments/master/screenshots/JRockPaperScissors.png" alt="Rock, Paper, Scissors" />
+					</a>
+				</p>
+                
+            </div>
+        </div>
+    </div>
+	
+	<footer class="footer">	
+		<div class="container">
+			<div class="pull-left">
+				Built with <a href="http://getbootstrap.com/">Bootstrap</a>.
+			</div>
+			
+			<a href="https://github.com/briancha" target="_blank"><img src="github.png" alt="GitHub icon" /></a>
+			<a href="https://www.linkedin.com/in/briachan" target="_blank"><img src="linkedin.png" alt="LinkedIn icon" /></a>		
+			<a href="mailto:brian@brianchan.me" target="_blank"><img src="email.png" alt="Email icon" /></a>		
+		</div>
+    </footer>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script src="script.js"></script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-18256281-24', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+</body>
+</html>

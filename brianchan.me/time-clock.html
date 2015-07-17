@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head lang="en">
     <!-- Latest compiled and minified CSS -->
@@ -8,7 +8,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Android Apps | Brian Chan</title>
+    <title>Time Clock Program | Brian Chan</title>
 </head>
 
 <body>
@@ -44,55 +44,58 @@
 
     <div class="container">
 		<div class="page-header">
-			<h1>Android Apps</h1>
+			<h1>Time Clock Software</h1>
 			<ol class="breadcrumb">
 			  <li><a href="index.html">Home</a></li>
 			  <li><a href="portfolio.html">Portfolio</a></li>
-			  <li class="active">Android Apps</li>
+			  <li class="active">Time Clock Software</li>
 			</ol>
 		</div>
 		
-		<div class="row">
-			<div class="col-sm-6 col-md-4">
-				<a href="pizza-droid.html">
-					<h2>Pizza Droid</h2>
-				</a>
-				<p>Try to eat as many pizzas as possible by moving the droid up and down by tapping on the screen. Pizzas appear and disappear in random places.</p>
-				<a href="pizza-droid.html">
-					<p>
-						<img src="https://raw.githubusercontent.com/briancha/Android-apps/master/PizzaDroid/screenshot.png" alt="Pizza Droid screenshot" />
-					</p>
-				</a>
-            </div>
-			
-            <div class="col-sm-6 col-md-4">
-                <a href="tip-calculator.html">
-					<h2>Tip Calculator</h2>
-				</a>
+		<div class="row">	
+            <div class="col-md-8">
+				<h2>Time Clock Software</h2>
 				
-				<p>Allows you calculate a tip, split a check, and figure out how much each person needs to pay</p>
-				
-				<a href="tip-calculator.html">
-					<p>
-						<img src="https://raw.githubusercontent.com/briancha/Android-apps/master/Tip%20Calculator/screenshot.png" alt="Tip Calculator screenshot" />
-					</p>
-				</a>	
-            </div>
-			
-            <div class="col-sm-6 col-md-4">
-				<h2>Simple Interest Calculator</h2>
-				<p>Calculate simple interest by inputting principal amount, interest rate, and number of years</p>
 				<p>
-					<img src="https://raw.githubusercontent.com/briancha/Android-apps/master/SI%20Calculator/screenshot.png" alt="Simple Interest Calculator screenshot" />
+					<ul class="list-group">
+						<li class="list-group-item">Allows employees to clock in and clock out using their own 4-digit PIN.</li>
+						<li class="list-group-item">Records their start and end times on an Excel workbook, whose title is based on the month, year, and pay period.</li>
+						<li class="list-group-item">The workbook is split into different sheets for each employee.</li>
+						<li class="list-group-item">Each sheet totals up each employee's time worked and displays it.</li>
+					</ul>
 				</p>
-            </div>		
+				
+				<p>
+					Features:
+					<ul class="list-group">
+						<li class="list-group-item">Program stores its data on Excel spreadsheet when it is not running</li>
+						<li class="list-group-item">Must continuously run once the first employee clocks in, until the last employee clocks out for the day</li>
+						<li class="list-group-item">Uses <a href="http://poi.apache.org/">Apache POI</a> to work with Excel</li>
+					</ul>
+				</p>			
+			</div> 
+			
+			<div class="col-md-7"> 
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/SbXPfK1vlCk" frameborder="0" allowfullscreen></iframe>	
+				</div>
+			</div>
+				
+			<div class="col-md-9">
+				<p>
+					Excel spreadsheet with clock in and out times:
+				</p>
+
+				<img src="https://raw.githubusercontent.com/briancha/programming-challenges/master/Time%20Clock/Excel-screenshot.png" />
+				<br />
+			</div>			
 		</div>
 		
-		<div class="col-sm-8 col-md-6">
+		<div class="col-sm-6 col-md-4">
 			  <div class="alert alert-info" role="alert">
-				<a href="https://github.com/briancha/Android-apps">See the code for these apps and more of my Android apps on GitHub</a>
+				<a href="https://github.com/briancha/programming-challenges/blob/master/Time%20Clock/TimeClock.java">See the code on GitHub</a>
 			  </div>
-        </div>
+		</div>
     </div>
 	
 	<footer class="footer">	

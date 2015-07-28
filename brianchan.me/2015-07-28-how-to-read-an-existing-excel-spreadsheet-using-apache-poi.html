@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head lang="en">
     <!-- Latest compiled and minified CSS -->
@@ -8,7 +8,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Web Design Projects | Brian Chan</title>
+    <title>How to Read an Existing Excel Spreadsheet Using Apache POI | Brian Chan</title>
 </head>
 
 <body>
@@ -42,54 +42,54 @@
 	
 
     <div class="container">
+
 		<div class="page-header">
-			<h1>Web Design Projects</h1>
+			<h1>How to Read an Existing Excel Spreadsheet Using Apache POI</h1>
 			<ol class="breadcrumb">
 			  <li><a href="index.html">Home</a></li>
-			  <li><a href="portfolio.html">Portfolio</a></li>
-			  <li class="active">Web Design</li>
+			  <li><a href="blog.html">Blog</a></li>
+			  <li class="active">How to Read an Existing Excel Spreadsheet Using Apache POI</li>
 			</ol>
 		</div>
 		
-		<div class="row web-design">
-			<div class="col-sm-6 col-md-4">
-				<a href="usc/">
-					<h2>USC</h2>
-				</a>
+		<div class="row article">
+			<div class="col-lg-7 col-md-8">
+				<p>
+					tl;dr version:<br />
+					Use this Java code: 
+					<pre>HSSFWorkbook workbook = new HSSFWorkbook(new FileInputStream(fileName));</pre>
+				</p>
+
+				<h2>Backstory</h2>
+				<p>While building the <a href="time-clock.html">time clock</a>, the biggest challenge I ran into was figuring out how to get the program to recognize whether an Excel time sheet had already been created. If there was already an existing time sheet, I wanted to prevent the program from creating a new Excel workbook and overriding the existing workbook &mdash; which would wipe out all the existing time clock data.</p>
+				<br />
+
+				<p>
+					If there was no existing spreadsheet, I wanted the program to create a new workbook:
+					<pre>HSSFWorkbook workbook = new HSSFWorkbook();</pre>
+				</p>
+				<br />
+
+				<p>
+					But if a spreadsheet already existed, I wanted the program to be able to manipulate its contents (and not create a whole new workbook).
+					<pre>HSSFWorkbook workbook = new HSSFWorkbook(new FileInputStream(fileName));</pre>
+					<ul>
+						<li>the solution I eventually stumbled upon</li>
+					</ul>
+				</p>
+				<br />
+
+				<p>It turns out Apache POI provides an example of how to implement a method to read a file: <a href="http://svn.apache.org/repos/asf/poi/trunk/src/examples/src/org/apache/poi/hssf/usermodel/examples/HSSFReadWrite.java">HSSFReadWrite.java (readFile() method)</a> &mdash; linked to from their <a href="http://poi.apache.org/spreadsheet/how-to.html">how-to guide</a>. It took me hours of stumbling around on the Internet to find this incredibly simple solution. I wish there had been an article or StackOverflow question about it.</p>
+
+				<p>
+					To see an example of the implementation, this read method is implemented on <a href="https://github.com/briancha/programming-challenges/blob/master/Time%20Clock/TimeClock.java">line 190 in TimeClock.java</a>.
+				</p>
 				
-				<p>Simple redesign of USC's website displaying information about its schools</p>
-				
-				<a href="usc/">
-					<p>
-						<img src="https://raw.githubusercontent.com/briancha/web-design-projects/master/USC/screenshot.png" />
-					</p>
-				</a>					
-            </div>
-			
-            <div class="col-sm-6 col-md-4">
-				<a href="big-four-audit-firms/">
-					<h2>Big Four Audit Firms</h2>
-				</a>
-				
-				<p>Website displaying information about the big 4 accounting firms</p>
-				
-				<a href="big-four-audit-firms/">
-					<img src="big-four-audit-firms/screenshot.png" />
-				</a>	
-            </div>
-			
-			<div class="col-sm-6 col-md-4">
-				<a href="css-course-site-redesign/">
-					<h2>CSS Course Site</h2>
-				</a>
-				
-				<p>Redesigned the CSS course website for as part of a final project</p>
-				
-				<a href="css-course-site-redesign/">
-					<img src="css-course-site-redesign/screenshot.png" />
-				</a>	
-            </div>
-		</div>		
+				<p><small>July 28, 2015</small></p>
+			</div>
+		</div>
+		
+		
     </div>
 	
 	<footer class="footer">	
